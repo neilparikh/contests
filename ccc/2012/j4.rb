@@ -9,7 +9,7 @@ word.split('').each_with_index do |c, i|
   s = k + (i+1) * 3
   a = letters.index(c) - s
   while a < 0
-    a = 26 + a
+    a += 26
   end
   final << letters[a]
 end
